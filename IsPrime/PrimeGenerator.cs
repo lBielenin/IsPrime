@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace IsPrime
 {
-    internal class PrimeGenerator
+    public class PrimeGenerator
     {
         public List<int> GeneratePrimes(int numberOfPrimes)
         {
@@ -15,7 +15,7 @@ namespace IsPrime
             {
                 double sqrt = Math.Sqrt(currentNumber);
 
-                if(isWhole(sqrt))
+                if(!isWhole(sqrt))
                 {
                     bool isPrime = true;
 
